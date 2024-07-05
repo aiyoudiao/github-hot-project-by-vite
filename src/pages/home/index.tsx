@@ -115,6 +115,19 @@ const Home: React.FC = () => {
       <Nav language={params.lang} change={handleLangChange} />
       <Modal error={loadError} onReload={loadMore} />
       <List error={loadError} loading={loading} items={repoList as any} total={totalCount} loadMore={loadMore} />
+      {!loading && loadError && (
+        <div className="flex justify-center items-center pb-2">
+          <button
+            className={`px-2 py-1  rounded transition-transform duration-300 transform bg-primary-dark text-white hover:bg-secondary-dark hover:scale-105 hover:shadow-outline-green
+      }`}
+            onClick={() => {
+              loadMore(true)
+            }}
+          >
+            ⬇加载更多
+          </button>
+        </div>
+      )}
     </>
   )
 }

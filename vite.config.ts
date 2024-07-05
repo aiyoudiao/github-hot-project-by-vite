@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production'
 
   return {
-    base: isDevelopment ? './' : '/github-hot-project-by-vite/', // 部署到github pages
+    base: './', // isDevelopment ? './' : '/github-hot-project-by-vite/', // 部署到github pages
     plugins: [
       react(), // React插件
       // windiCSS(), // tailwind css 插件

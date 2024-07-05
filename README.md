@@ -9,3 +9,7 @@ training-collection/github-hot-project-by-vite
 3. docker-compose up
 4. 访问 http://localhost:8080
 5. docker-compose down
+
+## 访问
+
+https://aiyoudiao.github.io/github-hot-project-by-vite/index.html
